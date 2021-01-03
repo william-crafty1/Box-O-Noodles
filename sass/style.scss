@@ -1,0 +1,373 @@
+// Logo CSS
+$logo-height: 80px;
+$logo-width: 100px;
+
+// background colors
+$section-orange: rgba(245, 225, 176, 0.918);
+$section-white: white;
+
+// font-colors
+$font-color-orange: rgb(243, 151, 89);
+
+// Fonts
+$Merienda-font: 'Merienda',
+cursive;
+$Montserrat-font: 'Montserrat',
+sans-serif;
+
+// Mixins
+@mixin flex-center-template {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// body CSS
+body {
+    text-align: center;
+    height: 100vh;
+    background-color: $section-white;
+    font-family: $Montserrat-font;
+}
+
+// Logo/Header CSS
+.noodle-logo {
+    height: $logo-height;
+    width: $logo-width;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.main-header {
+    @include flex-row();
+    justify-content: center;
+    background-color: $section-orange
+}
+
+// Nav CSS
+#nav-container {
+    @include flex-row();
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0px;
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        font-family: $Merienda-font;
+
+
+    }
+
+    #navigation {
+        color: black;
+        text-decoration: none;
+    }
+
+    #navigation:hover {
+        color: rgb(255, 105, 5);
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+        color: black;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #nav-icons {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #nav-container {
+        border: none;
+        padding: 0px;
+        background-color: $section-orange;
+        
+    }
+
+    #mobile-container {
+        @include flex-row();
+
+        .navbar-toggler {
+            color: black;
+            background-color: rgba(201, 185, 145, 0.918);
+            border: solid 2px wheat;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .title {
+            justify-content: center;
+            padding-right: 30px;
+            width: 50% !important;
+            font-family: $Merienda-font;
+        }
+
+
+    }
+
+    nav {
+        .navbar-collapse {
+            justify-content: flex-end;
+            padding-right: 0px !important;
+            width: 100%;
+        }
+
+        #navigation:hover {
+            color: rgb(255, 105, 5);
+        }
+
+    }
+
+}
+
+// Main title section
+
+.main-title {
+    @include flex-row();
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: $section-orange;
+
+    #main-title-left-side,
+    .title-header {
+        @include flex-column();
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    #main-title-right-side {
+        display: flex;
+    }
+
+    #button-div {
+        @include flex-row();
+        justify-content: center;
+        margin: 10px;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:visited{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: rgb(255, 105, 5);
+        color: white;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .cta-btn:hover {
+        background-color: rgb(243, 151, 89);
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    @media (max-width: 576px) {
+
+        .ramen-bowl,
+        #main-title-right-side {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+// Pricing section CSS
+
+.pricing-section-head{
+    padding-top: 30px;
+    font-family: $Merienda-font;
+}
+
+#pricing-section{
+    @include flex-row();
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#pricing-box, #pricing-box3{
+    text-align: center;
+    height: 600px;
+    margin: 20px;
+    border: 8px solid $section-orange;
+}
+
+.price-title{
+    color: $font-color-orange;
+    text-decoration: underline;
+    font-family: $Merienda-font;
+    padding-top: 10px;
+}
+
+.included-header{
+    color: $font-color-orange;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+#first-price-head{
+    padding-top: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.orange-text {
+    color: $font-color-orange;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.price {
+    color: $font-color-orange;
+}
+
+#box-1-price{
+    padding-top: 44px;
+}
+
+#box-2-price{
+    padding-top: 23px;
+}
+
+#sub-button-div, #sub-button-div-3, #sub-button-div2{
+    margin-top: 50px;
+    border-radius: 30px;
+
+    .sub-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 50px;
+        padding: 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: rgb(255, 105, 5);
+        color: white;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .sub-button:hover{
+        text-decoration: none;
+        color: white;
+        height: 50px;
+        background-color: rgb(243, 151, 89);
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    #pricing-box3{
+        height: 550px;
+    }
+
+    .included-header{
+        padding: 0px;
+    }
+
+    .included-list{
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+    }
+
+    .price {
+        color: $font-color-orange;
+    }
+    
+    #box-1-price{
+        padding-top: 0px;
+    }
+    
+    #box-2-price{
+        padding-top: 0px;
+    }
+
+    #pricing-box{
+        height: 500px;
+    }
+
+    #sub-button-div2{
+        margin-top: 25px;
+    }
+}
+
