@@ -232,9 +232,18 @@ li {
   padding-top: 23px;
 }
 
+@media (min-width: 750px) {
+  .large-box {
+    margin: 0;
+  }
+
+  #large-box-list {
+    margin: 18px !important;
+  }
+}
 #sub-button-div, #sub-button-div-3, #sub-button-div2 {
   margin-top: 50px;
-  border-radius: 30px;
+  padding-bottom: 50px;
 }
 #sub-button-div .sub-button, #sub-button-div-3 .sub-button, #sub-button-div2 .sub-button {
   display: flex;
@@ -266,10 +275,6 @@ li {
 }
 
 @media (max-width: 576px) {
-  #pricing-box3 {
-    height: 550px;
-  }
-
   .included-header {
     padding: 0px;
   }
@@ -295,11 +300,11 @@ li {
     padding-top: 0px;
   }
 
-  #pricing-box {
-    height: 500px;
+  #sub-button-div2 {
+    margin-top: 25px;
   }
 
-  #sub-button-div2 {
+  #sub-button-div, #sub-button-div-3, #sub-button-div2 {
     margin-top: 25px;
   }
 }
