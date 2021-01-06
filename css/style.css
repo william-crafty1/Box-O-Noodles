@@ -132,7 +132,7 @@ nav #nav-icons {
   text-decoration: none;
   color: white;
 }
-.main-title .cta-btn {
+.main-title .purchase-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +150,7 @@ nav #nav-icons {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.main-title .cta-btn:hover {
+.main-title .purchase-btn:hover {
   background-color: #f39759;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -232,15 +232,6 @@ li {
   padding-top: 23px;
 }
 
-@media (min-width: 750px) {
-  .large-box {
-    margin: 0;
-  }
-
-  #large-box-list {
-    margin: 18px !important;
-  }
-}
 #sub-button-div, #sub-button-div-3, #sub-button-div2 {
   margin-top: 50px;
   padding-bottom: 50px;
@@ -275,6 +266,20 @@ li {
 }
 
 @media (max-width: 576px) {
+  #pricing-box {
+    text-align: center;
+    height: 500px;
+    margin: 20px;
+    border: 8px solid rgba(245, 225, 176, 0.918);
+  }
+
+  #pricing-box3 {
+    text-align: center;
+    height: 600px;
+    margin: 20px;
+    border: 8px solid rgba(245, 225, 176, 0.918);
+  }
+
   .included-header {
     padding: 0px;
   }
@@ -300,12 +305,12 @@ li {
     padding-top: 0px;
   }
 
-  #sub-button-div2 {
-    margin-top: 25px;
+  #sub-button-div-3 {
+    margin-top: 70px;
   }
 
-  #sub-button-div, #sub-button-div-3, #sub-button-div2 {
-    margin-top: 25px;
+  .sub-button {
+    width: 100%;
   }
 }
 

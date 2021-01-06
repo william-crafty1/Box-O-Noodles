@@ -191,7 +191,7 @@ nav {
         }
     }
 
-    .cta-btn {
+    .purchase-btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -210,7 +210,7 @@ nav {
         transition: .5s;
     }
 
-    .cta-btn:hover {
+    .purchase-btn:hover {
         background-color: rgb(243, 151, 89);
         -o-transition: .5s;
         -ms-transition: .5s;
@@ -296,17 +296,6 @@ li{
     padding-top: 23px;
 }
 
-// Adjustments for larger screens
-@media (min-width: 750px){
-    .large-box{
-        margin: 0;
-    }
-    
-    #large-box-list{
-        margin: 18px!important;
-    }
-}
-
 #sub-button-div, #sub-button-div-3, #sub-button-div2{
     margin-top: 50px;
     padding-bottom: 50px;
@@ -343,7 +332,22 @@ li{
     
 }
 
+// Mobile adjustments
 @media (max-width: 576px) {
+
+    #pricing-box{
+        text-align: center;
+        height: 500px;
+        margin: 20px;
+        border: 8px solid $section-orange;
+    }
+
+    #pricing-box3{
+        text-align: center;
+        height: 600px;
+        margin: 20px;
+        border: 8px solid $section-orange;
+    }
 
     .included-header{
         padding: 0px;
@@ -369,12 +373,12 @@ li{
         padding-top: 0px;
     }
 
-    #sub-button-div2{
-        margin-top: 25px;
+    #sub-button-div-3{
+        margin-top: 70px;
     }
 
-    #sub-button-div, #sub-button-div-3, #sub-button-div2{
-        margin-top: 25px;
+    .sub-button{
+        width: 100%;
     }
 }
 
