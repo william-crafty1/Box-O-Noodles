@@ -5,6 +5,7 @@ $logo-width: 100px;
 // background colors
 $section-orange: rgba(245, 225, 176, 0.918);
 $section-white: white;
+$section-dark-orange: rgb(255, 105, 5);
 
 // font-colors
 $font-color-orange: rgb(243, 151, 89);
@@ -84,7 +85,7 @@ nav {
     }
 
     #navigation:hover {
-        color: rgb(255, 105, 5);
+        color: $section-dark-orange;
     }
 
     .navbar-collapse {
@@ -105,7 +106,7 @@ nav {
         margin-right: 10px;
     }
 }
-
+// Mobile adjustments 
 @media (max-width: 576px) {
 
     #nav-container {
@@ -201,7 +202,7 @@ nav {
         padding: 20px;
         border: none;
         border-radius: 30px;
-        background-color: rgb(255, 105, 5);
+        background-color: $section-dark-orange;
         color: white;
         -o-transition: .5s;
         -ms-transition: .5s;
@@ -218,7 +219,7 @@ nav {
         -webkit-transition: .5s;
         transition: .5s;
     }
-
+    // Mobile adjustments 
     @media (max-width: 576px) {
 
         .ramen-bowl,
@@ -226,6 +227,31 @@ nav {
             width: 400px;
             height: 400px;
         }
+    }
+}
+
+// About section
+
+.about{
+    padding-top: 20px;
+    background-color: $section-dark-orange;
+    color: $section-white;
+}
+
+#about-section{
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .about-head{
+        font-family: $Merienda-font;
+        text-decoration: underline;
+    }
+
+    .about-description{
+        padding: 20px;
+        font-size: 20px;
     }
 }
 
@@ -309,7 +335,7 @@ li{
         padding: 20px;
         border: none;
         border-radius: 30px;
-        background-color: rgb(255, 105, 5);
+        background-color: $section-dark-orange;
         color: white;
         -o-transition: .5s;
         -ms-transition: .5s;
