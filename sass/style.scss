@@ -255,6 +255,24 @@ nav {
     }
 }
 
+#bio-segment{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    .about-img{
+        height: 200px;
+        width: 300px;
+    }
+
+}
+
 // Pricing section CSS
 
 .pricing-section-head{
