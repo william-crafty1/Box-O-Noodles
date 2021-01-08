@@ -188,6 +188,22 @@ nav #nav-icons {
   font-size: 20px;
 }
 
+#bio-segment {
+  display: flex;
+  flex-direction: row;
+}
+
+#about-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#about-img-div .about-img {
+  height: 200px;
+  width: 300px;
+}
+
 .pricing-section-head {
   padding-top: 30px;
   font-family: "Merienda", cursive;
