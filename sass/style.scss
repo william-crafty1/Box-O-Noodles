@@ -240,19 +240,20 @@ nav {
     color: $section-white;
 }
 
+.about-head{
+    font-family: $Merienda-font;
+    text-decoration: underline;
+}
+
 #about-section{
     @include flex-column();
     @include center-content();
     text-align: center;
 
-    .about-head{
-        font-family: $Merienda-font;
-        text-decoration: underline;
-    }
-
     .about-description{
         padding: 20px;
-        font-size: 20px;
+        padding-top: 90px;
+        font-size: 24px;
     }
 }
 
@@ -262,24 +263,58 @@ nav {
 
 #about-img-div{
     display: flex;
-    @include center-content();
-    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 10px;
     
     .about-img{
-        height: 200px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
     }
 
 }
 
+#flow-chart-container{
+    @include flex-row();
+    @include flex-center-template();
+    padding-bottom: 30px;
+}
+
 #flow-chart-div{
     @include flex-row();
+    @include flex-center-template();
 
-    // #flowchart-box{
+    #flowchart-box{
+        @include flex-column();
+        @include flex-center-template();
+        background-color: $section-orange;
+        color: black;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
 
-    // }
+        .flow-header{
+            text-decoration: underline;
+        }
+
+    }
 
 }
+
+    // Mobile adjustments 
+    @media (max-width: 576px) {
+        .about-description{
+            padding: 20px;
+            padding-top: 20px!important;
+            font-size: 24px;
+        }
+
+        #about-img-div{
+            display: none;
+        }
+    }
 
 // Pricing section CSS
 
