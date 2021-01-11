@@ -242,6 +242,10 @@ nav #nav-icons {
 #flow-chart-div #flowchart-box .flow-header {
   text-decoration: underline;
 }
+#flow-chart-div .flow-icons {
+  font-size: 40px;
+  color: #ff6905;
+}
 
 @media (max-width: 576px) {
   .about-description {
