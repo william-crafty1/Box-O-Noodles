@@ -465,3 +465,32 @@ li{
     }
 }
 
+// Coming soon/Custom Box CSS
+
+#preview-product{
+    position: relative;
+}
+
+.blurred-background{
+    @include flex-center-template();
+    background-image: url("../assets/blurred-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 400px; 
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.promotional-text{
+    @include flex-center-template();
+    @include flex-column();
+    text-align: center;
+}
+
+
+
+
