@@ -549,6 +549,11 @@ li{
     font-size: 15px;
 }
 
+#bottom-nav{
+    border-bottom: 2px solid $section-dark-orange;
+    width: 80%;
+}
+
 #link-list{
     display: flex;
     flex-direction: row;
